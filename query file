@@ -1,0 +1,5 @@
+
+
+SELECT DISTINCT e.ssnID , e.name , e.intro , e.prevExprience , e.educationInfo  ,  el.intro ,el.prevExprience,el.educationInfo  FROM employeeInfo e 
+             INNER JOIN employeeLanguages el ON e.ssnID = el.ssnID 
+             WHERE e.ssnID = 1
